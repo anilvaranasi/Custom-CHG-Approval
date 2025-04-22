@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>d87a507d83496210b0abcfc0deaad34f</answer>
+        <condition table="var__m_sys_decision_input_5b06ce5db701230034d1da23ee11a965">change_request.state=-3^change_request.riskIN2,3^change_request.approval=requested^NQchange_request.state=-3^change_request.assignment_group.managerISEMPTY^EQ<item display_value="Authorize" endquery="false" field="change_request.state" goto="false" newquery="false" operator="=" or="false" value="-3"/>
+            <item display_value="2,3" endquery="false" field="change_request.risk" goto="false" newquery="false" operator="IN" or="false" value="2,3"/>
+            <item display_value="Requested" endquery="false" field="change_request.approval" goto="false" newquery="false" operator="=" or="false" value="requested"/>
+            <item display_value="Authorize" endquery="false" field="change_request.state" goto="false" newquery="true" operator="=" or="false" value="-3"/>
+            <item endquery="false" field="change_request.assignment_group.manager" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="Normal Change Policy">5b06ce5db701230034d1da23ee11a965</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_5b06ce5db701230034d1da23ee11a965</input_table>
+        <label>Requires Application Owner Approval</label>
+        <marked_for_deletion>false</marked_for_deletion>
+        <order>100</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-04-22 02:18:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bfaa907d83496210b0abcfc0deaad329</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Requires Application Owner Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Custom CHG Approval" source="aa4394b183496210b0abcfc0deaad33b">aa4394b183496210b0abcfc0deaad33b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Custom CHG Approval">aa4394b183496210b0abcfc0deaad33b</sys_scope>
+        <sys_update_name>sys_decision_question_bfaa907d83496210b0abcfc0deaad329</sys_update_name>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-04-22 05:35:52</sys_updated_on>
+    </sys_decision_question>
+</record_update>
